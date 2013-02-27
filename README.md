@@ -1,4 +1,3 @@
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js></script>
 # calendar #
 
 calendar是自动生成日历的jQuery插件
@@ -13,11 +12,11 @@ calendar是自动生成日历的jQuery插件
 
 引用css, js
 
-<pre  class="prettyprint lang-html">
+<code>
 	<link rel="stylesheet" type="text/css" href="calendar_ui.css" />
 	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="calendar_ui.js"></script>
-</pre>
+</code>
 
 <code>
 	$(".wrapper").calendar({});
