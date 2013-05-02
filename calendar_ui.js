@@ -4,7 +4,8 @@
 
 		var defaults = {
 			date: new Date(),
-			dateClick:function(currentDate){return currentDate;}
+			showCurrent:function(){}, // 默认显示的内容
+			dateClick:function(){} // 点击发生的行为
 		}
 
 		var options = $.extend(defaults, options);
@@ -31,15 +32,16 @@
 					btn = $("td a", target);
 
 				
+				options.showCurrent(options.date);
 
-				btn.live("click",function(){
+				btn.live("click",function(event){
 					options.dateClick($(this).attr("date"));
 					$(this).parents(".calendar_ui_con_body").children("tr").children("td").removeClass("todaytd");
 					$(this).parents("td").addClass("todaytd");
 				});
 
-				// 取当前这天的值
-				$("td.selectedtd a", target).trigger("click");
+				// 为当天的值添加todaytd
+				$("td.selectedtd", target).addClass("todaytd");
 
 				//当点击左按钮时,减去一个月,并重绘TABLE
 				preMon.click(function(){ 
