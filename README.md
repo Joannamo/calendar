@@ -14,7 +14,9 @@ calendar是自动生成日历的jQuery插件
 
 <code html>
 	&lt;link rel="stylesheet" type="text/css" href="calendar_ui.css" /&gt;
+	
 	&lt;script type="text/javascript" src="jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+	
 	&lt;script type="text/javascript" src="calendar_ui.js"&gt;&lt;/script&gt;
 </code>
 
