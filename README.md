@@ -12,13 +12,13 @@ calendar是自动生成日历的jQuery插件
 
 引用css, js
 
-<code>
-	<link rel="stylesheet" type="text/css" href="calendar_ui.css" />
-	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="calendar_ui.js"></script>
+<code html>
+	&lt;link rel="stylesheet" type="text/css" href="calendar_ui.css" /&gt;
+	&lt;script type="text/javascript" src="jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="calendar_ui.js"&gt;&lt;/script&gt;
 </code>
 
-<code>
+<code javscript>
 	$(".wrapper").calendar({});
 
 </code>
@@ -28,7 +28,7 @@ calendar是自动生成日历的jQuery插件
 
 点击时间，返回选择的时间
 
-<code>
+<code javscript>
 	$(".wrapper").calendar({
 		dateClick:function(currentDate){return currentDate;}
 	});
