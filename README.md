@@ -35,3 +35,7 @@ calendar是自动生成日历的jQuery插件
 		dateClick:function(currentDate){return currentDate;}
 	});
 </code>
+
+# demo  #
+
+<p><a href="http://joannamo.github.com/calendar/calendar_ui.html">Calendar</a></p>	
